@@ -1,0 +1,8 @@
+''This is a VBA Macro code snippet used to sort a range of data base on the provided key.
+''Example: In this snippet, I will sort a range from B8 to K1000 based on the column within E8. (Useful for Sales sorting)
+''Created by: Gerald John Alviar https://ph.linkedin.com/in/geraldalviar, please contact me if you use it. This will help to improve my snippet.
+
+Sub SortBBIN()
+Range("B8:K1000").Sort _
+Key1:=Range("E8"), Order1:=xlDescending 'xlAscending for Ascending order
+End Sub
