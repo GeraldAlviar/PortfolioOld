@@ -1,7 +1,7 @@
 ''This is a VBA Macro code snippet for detecting a Microsoft Excel workbook using its file name. You may also use wildcards to enhance workbook detection.
 ''Example: WorkbookNo, WorkbookNo(1), and WorkbookNo(2). You can use "WorkbookNo*" to detect filename variations.
 ''Extra codes are included for cleaning the destination spreadsheet for pasting and detecting a modified columns.
-''Created by: Gerald John Alviar https://ph.linkedin.com/in/geraldalviar, please contact me if you used it. This will help to improve my snippet.
+''Created by: Gerald John Alviar https://ph.linkedin.com/in/geraldalviar, please contact me if you use it. This will help to improve my snippet.
 
 Sub DetectWorkBookMacro()
 
