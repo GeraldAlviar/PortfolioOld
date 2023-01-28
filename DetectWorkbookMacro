@@ -1,13 +1,13 @@
 ''This is a VBA Macro code snippet for detecting a Microsoft Excel workbook using its file name. You may also use wildcards to enhance workbook detection.
 ''Example: WorkbookNo, WorkbookNo(1), and WorkbookNo(2). You can use "WorkbookNo*" to detect filename variations.
-''Created by: Gerald John Alviar https://ph.linkedin.com/in/geraldalviar
+''Extra codes are included for cleaning the destination spreadsheet for pasting and detecting a modified columns.
+''Created by: Gerald John Alviar https://ph.linkedin.com/in/geraldalviar, please contact me if you used it. This will help to improve my snippet.
 
+Sub DetectWorkBookMacro()
 
-Sub DetectSpreadsheet()
+Call ClearOutputData 'VBA Macro Code used to clear the output data before detecting new spreadsheet
 
-Call ClearOutputData 'Used to clear the output data before detecting new spreadsheet
-
-Dim Ct As Long 'Detect spreadsheet using wildcard/partial file name
+Dim Ct As Long 'Detect ExcelWorkbook using wildcard/partial file name
 For Each Wb In Application.Workbooks
     If Wb.Name Like "*Spreadsheet_Name" Then  'use asterisk (*) for wildcard search
         Ct = Ct + 1
@@ -18,7 +18,8 @@ Next Wb
 If Ct = 0 Then MsgBox "PT Spreadsheet Not Found" 'Find spreadsheet using wildcard/partial file name
 If Ct = 0 Then Exit Sub
 
-If Range("Q2").Value = 0 Then 'Modified Spreadsheet Detection
+If Range("Q2").Value = 0 Then 'Extra Snippet: Simple Modified Spreadsheet Detection
 MsgBox "Modified Spreadsheet Detected"
 Exit Sub
 End If
+End Sub
