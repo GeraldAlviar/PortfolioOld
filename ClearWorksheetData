@@ -1,0 +1,17 @@
+''This is a VBA Macro code snippet used to clear content within the specified range, cell, or table.
+''Example: In this snippet, I will clear a range from B8 to K1000 and the same time, the cell Q3 and S3.
+''Created by: Gerald John Alviar https://ph.linkedin.com/in/geraldalviar, please contact me if you use it. This will help to improve my snippet.
+
+
+Sub ClearWorkSheetData()
+Range("B8:K1000").ClearContents 'Clearcontent command, you can specify what to clear
+Range("Q3,S3").ClearContents
+End Sub
+
+'Other Methods for Clear
+'   .Clear 'Clears Everything   
+'   .ClearComments 'Clear Comments  
+'   .ClearFormats 'Clears Formatting   
+'   .ClearHyperlinks 'Clear Hyperlinks  
+'   .ClearNotes 'Clear Notes
+'   .ClearOutline 'Clears Outline
