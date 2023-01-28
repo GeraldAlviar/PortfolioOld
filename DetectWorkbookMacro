@@ -5,7 +5,7 @@
 
 Sub DetectWorkBookMacro()
 
-Call ClearOutputData 'VBA Macro Code used to clear the output data before detecting new spreadsheet
+Call ClearOutputData 'VBA Macro Code use to clear the output data before detecting new spreadsheet
 
 Dim Ct As Long 'Detect ExcelWorkbook using wildcard/partial file name
 For Each Wb In Application.Workbooks
