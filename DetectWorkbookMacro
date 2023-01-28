@@ -15,7 +15,7 @@ For Each Wb In Application.Workbooks
         Exit For
     End If
 Next Wb
-If Ct = 0 Then MsgBox "PT Spreadsheet Not Found" 'Find spreadsheet using wildcard/partial file name
+If Ct = 0 Then MsgBox "PT Spreadsheet Not Found" 'Notify user if the specified workbook based on the Filename has not been found
 If Ct = 0 Then Exit Sub
 
 If Range("Q2").Value = 0 Then 'Extra Snippet: Simple Modified Spreadsheet Detection
